@@ -1,0 +1,488 @@
+2026-03-03 19:56:26 ERROR Traceback (most recent call last):
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/apis/normalize.py", line 28, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1162, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep rbhdsks-iitm/DA6401-DL-ASSIGNMENT01/abcd1234 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/cli/cli.py", line 149, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/cli/cli.py", line 1765, in agent
+    wandb_agent.agent(
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/wandb_agent.py", line 669, in agent
+    return run_agent(
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/wandb_agent.py", line 622, in run_agent
+    agent.run()
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/wandb_agent.py", line 277, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/apis/internal.py", line 125, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/apis/normalize.py", line 82, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/apis/normalize.py", line 28, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1162, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep rbhdsks-iitm/DA6401-DL-ASSIGNMENT01/abcd1234 not found
+Traceback (most recent call last):
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/apis/normalize.py", line 28, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1162, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep rbhdsks-iitm/DA6401-DL-ASSIGNMENT01/abcd1234 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/cli/cli.py", line 149, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/cli/cli.py", line 1765, in agent
+    wandb_agent.agent(
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/wandb_agent.py", line 669, in agent
+    return run_agent(
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/wandb_agent.py", line 622, in run_agent
+    agent.run()
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/wandb_agent.py", line 277, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/apis/internal.py", line 125, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/apis/normalize.py", line 82, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/apis/normalize.py", line 28, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1162, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep rbhdsks-iitm/DA6401-DL-ASSIGNMENT01/abcd1234 not found
+2026-03-03 19:59:33 INFO Running runs: []
+2026-03-03 19:59:34 INFO Agent received command: run
+2026-03-03 19:59:34 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 256
+	dataset: mnist
+	epochs: 10
+	hidden_size: 128
+	learning_rate: 0.00021244224058493424
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	seed: 42
+	weight_decay: 4.907654964762306e-06
+	weight_init: xavier
+2026-03-03 19:59:34 INFO About to run command: /usr/bin/env python src/train.py -d -e -b -l -o -lr -wd -nhl -sz -a -wi --seed --model_save_path models/sweep_model.npy --config_save_path models/sweep_config.json
+2026-03-03 19:59:39 INFO Running runs: ['87vzbf2h']
+2026-03-03 19:59:39 INFO Cleaning up finished run: 87vzbf2h
+2026-03-03 19:59:40 INFO Agent received command: run
+2026-03-03 19:59:40 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 256
+	dataset: mnist
+	epochs: 20
+	hidden_size: 96
+	learning_rate: 0.004312148507804255
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: adam
+	seed: 21
+	weight_decay: 3.772788367123938e-06
+	weight_init: random
+2026-03-03 19:59:40 INFO About to run command: /usr/bin/env python src/train.py -d -e -b -l -o -lr -wd -nhl -sz -a -wi --seed --model_save_path models/sweep_model.npy --config_save_path models/sweep_config.json
+2026-03-03 19:59:45 INFO Running runs: ['wopi2vdx']
+2026-03-03 19:59:45 INFO Cleaning up finished run: wopi2vdx
+2026-03-03 19:59:47 INFO Agent received command: run
+2026-03-03 19:59:47 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 256
+	dataset: mnist
+	epochs: 30
+	hidden_size: 128
+	learning_rate: 0.0035488647925757577
+	loss: mse
+	num_layers: 3
+	optimizer: nag
+	seed: 42
+	weight_decay: 1.7872550388849084e-05
+	weight_init: random
+2026-03-03 19:59:47 INFO About to run command: /usr/bin/env python src/train.py -d -e -b -l -o -lr -wd -nhl -sz -a -wi --seed --model_save_path models/sweep_model.npy --config_save_path models/sweep_config.json
+2026-03-03 19:59:52 INFO Running runs: ['3wxlabxg']
+2026-03-03 19:59:52 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2026-03-03 19:59:52 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2026-03-03 20:24:12 INFO Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.wandb.ai', port=443): Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("HTTPSConnection(host='api.wandb.ai', port=443): Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 160, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 394, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 70, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/zsres/.pyenv/versions/3.10.11/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("HTTPSConnection(host='api.wandb.ai', port=443): Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-03-03 20:36:12 INFO Running runs: []
+2026-03-03 20:36:13 INFO Agent received command: run
+2026-03-03 20:36:13 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 30
+	hidden_size: 96
+	learning_rate: 0.0003573721291949725
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 3
+	optimizer: rmsprop
+	seed: 42
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 0.0009412378339600722
+	weight_init: xavier
+2026-03-03 20:36:13 INFO About to run command: /usr/bin/env python src/train.py --activation=relu --batch_size=64 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=30 --hidden_size=96 --learning_rate=0.0003573721291949725 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=3 --optimizer=rmsprop --seed=42 --wandb_entity=rbhdsks-iitm --weight_decay=0.0009412378339600722 --weight_init=xavier
+2026-03-03 20:36:18 INFO Running runs: ['xw6pa6cp']
+2026-03-03 20:36:18 INFO Cleaning up finished run: xw6pa6cp
+2026-03-03 20:36:18 INFO Agent received command: run
+2026-03-03 20:36:18 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 10
+	hidden_size: 64
+	learning_rate: 0.00015151031546764955
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 3
+	optimizer: nadam
+	seed: 7
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 2.982249961283311e-06
+	weight_init: random
+2026-03-03 20:36:18 INFO About to run command: /usr/bin/env python src/train.py --activation=relu --batch_size=128 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=10 --hidden_size=64 --learning_rate=0.00015151031546764955 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=3 --optimizer=nadam --seed=7 --wandb_entity=rbhdsks-iitm --weight_decay=2.982249961283311e-06 --weight_init=random
+2026-03-03 20:36:23 INFO Running runs: ['lvotxbie']
+2026-03-03 20:36:23 INFO Cleaning up finished run: lvotxbie
+2026-03-03 20:36:24 INFO Agent received command: run
+2026-03-03 20:36:24 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 30
+	hidden_size: 64
+	learning_rate: 0.0018347362302485884
+	loss: mse
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 4
+	optimizer: nadam
+	seed: 42
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 0.00044010370911660426
+	weight_init: random
+2026-03-03 20:36:24 INFO About to run command: /usr/bin/env python src/train.py --activation=relu --batch_size=64 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=30 --hidden_size=64 --learning_rate=0.0018347362302485884 --loss=mse --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=4 --optimizer=nadam --seed=42 --wandb_entity=rbhdsks-iitm --weight_decay=0.00044010370911660426 --weight_init=random
+2026-03-03 20:36:29 INFO Running runs: ['v9mk6zgi']
+2026-03-03 20:36:29 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2026-03-03 20:36:29 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2026-03-03 21:48:35 INFO Running runs: []
+2026-03-03 21:48:35 INFO Agent received command: run
+2026-03-03 21:48:35 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 30
+	hidden_size: 96
+	learning_rate: 0.0003573721291949725
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 3
+	optimizer: rmsprop
+	seed: 42
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 0.0009412378339600722
+	weight_init: xavier
+2026-03-03 21:48:35 INFO About to run command: /usr/bin/env python src/train.py --activation=relu --batch_size=64 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=30 --hidden_size=96 --learning_rate=0.0003573721291949725 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=3 --optimizer=rmsprop --seed=42 --wandb_entity=rbhdsks-iitm --weight_decay=0.0009412378339600722 --weight_init=xavier
+2026-03-03 21:48:40 INFO Running runs: ['xw6pa6cp']
+2026-03-03 21:50:50 INFO Cleaning up finished run: xw6pa6cp
+2026-03-03 21:50:51 INFO Agent received command: run
+2026-03-03 21:50:51 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 10
+	hidden_size: 64
+	learning_rate: 0.00015151031546764955
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 3
+	optimizer: nadam
+	seed: 7
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 2.982249961283311e-06
+	weight_init: random
+2026-03-03 21:50:51 INFO About to run command: /usr/bin/env python src/train.py --activation=relu --batch_size=128 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=10 --hidden_size=64 --learning_rate=0.00015151031546764955 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=3 --optimizer=nadam --seed=7 --wandb_entity=rbhdsks-iitm --weight_decay=2.982249961283311e-06 --weight_init=random
+2026-03-03 21:50:56 INFO Running runs: ['lvotxbie']
+2026-03-03 21:51:17 INFO Cleaning up finished run: lvotxbie
+2026-03-03 21:51:18 INFO Agent received command: run
+2026-03-03 21:51:18 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 30
+	hidden_size: 64
+	learning_rate: 0.0018347362302485884
+	loss: mse
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 4
+	optimizer: nadam
+	seed: 42
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 0.00044010370911660426
+	weight_init: random
+2026-03-03 21:51:18 INFO About to run command: /usr/bin/env python src/train.py --activation=relu --batch_size=64 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=30 --hidden_size=64 --learning_rate=0.0018347362302485884 --loss=mse --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=4 --optimizer=nadam --seed=42 --wandb_entity=rbhdsks-iitm --weight_decay=0.00044010370911660426 --weight_init=random
+2026-03-03 21:51:23 INFO Running runs: ['v9mk6zgi']
+2026-03-05 18:35:22 INFO Running runs: []
+2026-03-05 18:35:24 INFO Agent received command: run
+2026-03-05 18:35:24 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 10
+	hidden_size: 64
+	learning_rate: 0.0015943756371698285
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 3
+	optimizer: nadam
+	seed: 7
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 0.0007509680964616699
+	weight_init: random
+2026-03-05 18:35:24 INFO About to run command: /usr/bin/env python src/train.py --activation=sigmoid --batch_size=64 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=10 --hidden_size=64 --learning_rate=0.0015943756371698285 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=3 --optimizer=nadam --seed=7 --wandb_entity=rbhdsks-iitm --weight_decay=0.0007509680964616699 --weight_init=random
+2026-03-05 18:35:29 INFO Running runs: ['gw3r3l4v']
+2026-03-05 18:42:08 INFO Cleaning up finished run: gw3r3l4v
+2026-03-05 18:42:11 INFO Agent received command: run
+2026-03-05 18:42:11 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 20
+	hidden_size: 64
+	learning_rate: 0.0019922443455350023
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 2
+	optimizer: rmsprop
+	seed: 21
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 0.0006936827592863632
+	weight_init: xavier
+2026-03-05 18:42:11 INFO About to run command: /usr/bin/env python src/train.py --activation=sigmoid --batch_size=128 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=20 --hidden_size=64 --learning_rate=0.0019922443455350023 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=2 --optimizer=rmsprop --seed=21 --wandb_entity=rbhdsks-iitm --weight_decay=0.0006936827592863632 --weight_init=xavier
+2026-03-05 18:42:16 INFO Running runs: ['64z2th65']
+2026-03-05 18:53:57 INFO Cleaning up finished run: 64z2th65
+2026-03-05 18:53:58 INFO Agent received command: run
+2026-03-05 18:53:58 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 256
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 10
+	hidden_size: 64
+	learning_rate: 0.00044072166465718247
+	loss: mse
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 2
+	optimizer: rmsprop
+	seed: 21
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 0.0009851784402409695
+	weight_init: xavier
+2026-03-05 18:53:58 INFO About to run command: /usr/bin/env python src/train.py --activation=tanh --batch_size=256 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=10 --hidden_size=64 --learning_rate=0.00044072166465718247 --loss=mse --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=2 --optimizer=rmsprop --seed=21 --wandb_entity=rbhdsks-iitm --weight_decay=0.0009851784402409695 --weight_init=xavier
+2026-03-05 18:54:03 INFO Running runs: ['4d045a23']
+2026-03-05 18:57:31 INFO Cleaning up finished run: 4d045a23
+2026-03-05 18:57:31 INFO Agent received command: run
+2026-03-05 18:57:31 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 256
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 10
+	hidden_size: 96
+	learning_rate: 0.0030107469538771725
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 4
+	optimizer: momentum
+	seed: 21
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 4.1062500111145666e-05
+	weight_init: xavier
+2026-03-05 18:57:31 INFO About to run command: /usr/bin/env python src/train.py --activation=relu --batch_size=256 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=10 --hidden_size=96 --learning_rate=0.0030107469538771725 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=4 --optimizer=momentum --seed=21 --wandb_entity=rbhdsks-iitm --weight_decay=4.1062500111145666e-05 --weight_init=xavier
+2026-03-05 18:57:36 INFO Running runs: ['uo762w13']
+2026-03-05 19:02:41 INFO Cleaning up finished run: uo762w13
+2026-03-05 19:02:41 INFO Agent received command: run
+2026-03-05 19:02:41 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 30
+	hidden_size: 128
+	learning_rate: 0.00029144315661730556
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 3
+	optimizer: rmsprop
+	seed: 7
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 8.419735059588198e-05
+	weight_init: random
+2026-03-05 19:02:41 INFO About to run command: /usr/bin/env python src/train.py --activation=tanh --batch_size=64 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=30 --hidden_size=128 --learning_rate=0.00029144315661730556 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=3 --optimizer=rmsprop --seed=7 --wandb_entity=rbhdsks-iitm --weight_decay=8.419735059588198e-05 --weight_init=random
+2026-03-05 19:02:46 INFO Running runs: ['x1v7labk']
+2026-03-05 19:40:36 INFO Cleaning up finished run: x1v7labk
+2026-03-05 19:40:41 INFO Agent received command: run
+2026-03-05 19:40:41 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 30
+	hidden_size: 128
+	learning_rate: 0.00012134291035371563
+	loss: mse
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 2
+	optimizer: nadam
+	seed: 42
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 0.0002415532807843489
+	weight_init: xavier
+2026-03-05 19:40:41 INFO About to run command: /usr/bin/env python src/train.py --activation=relu --batch_size=64 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=30 --hidden_size=128 --learning_rate=0.00012134291035371563 --loss=mse --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=2 --optimizer=nadam --seed=42 --wandb_entity=rbhdsks-iitm --weight_decay=0.0002415532807843489 --weight_init=xavier
+2026-03-05 19:40:46 INFO Running runs: ['vzrhisl1']
+2026-03-05 20:08:52 INFO Cleaning up finished run: vzrhisl1
+2026-03-05 20:08:54 INFO Agent received command: run
+2026-03-05 20:08:54 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 10
+	hidden_size: 96
+	learning_rate: 0.0034421898195326622
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 4
+	optimizer: momentum
+	seed: 7
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 6.0709796269741906e-05
+	weight_init: random
+2026-03-05 20:08:54 INFO About to run command: /usr/bin/env python src/train.py --activation=tanh --batch_size=64 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=10 --hidden_size=96 --learning_rate=0.0034421898195326622 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=4 --optimizer=momentum --seed=7 --wandb_entity=rbhdsks-iitm --weight_decay=6.0709796269741906e-05 --weight_init=random
+2026-03-05 20:08:59 INFO Running runs: ['2zzd6z29']
+2026-03-05 20:24:28 INFO Cleaning up finished run: 2zzd6z29
+2026-03-05 20:24:31 INFO Agent received command: run
+2026-03-05 20:24:31 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 30
+	hidden_size: 64
+	learning_rate: 0.0008035504083106707
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 3
+	optimizer: nadam
+	seed: 42
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 0.0003954739025025887
+	weight_init: random
+2026-03-05 20:24:31 INFO About to run command: /usr/bin/env python src/train.py --activation=sigmoid --batch_size=64 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=30 --hidden_size=64 --learning_rate=0.0008035504083106707 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=3 --optimizer=nadam --seed=42 --wandb_entity=rbhdsks-iitm --weight_decay=0.0003954739025025887 --weight_init=random
+2026-03-05 20:24:36 INFO Running runs: ['njrdqpew']
+2026-03-05 20:50:37 INFO Cleaning up finished run: njrdqpew
+2026-03-05 20:50:40 INFO Agent received command: run
+2026-03-05 20:50:40 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 256
+	config_save_path: models/sweep_config.json
+	dataset: mnist
+	epochs: 10
+	hidden_size: 128
+	learning_rate: 0.0007276720173445926
+	loss: cross_entropy
+	model_save_path: models/sweep_model.npy
+	no_sweep_yaml: True
+	num_layers: 2
+	optimizer: nag
+	seed: 21
+	wandb_entity: rbhdsks-iitm
+	weight_decay: 0.0004308525566858694
+	weight_init: random
+2026-03-05 20:50:40 INFO About to run command: /usr/bin/env python src/train.py --activation=tanh --batch_size=256 --config_save_path=models/sweep_config.json --dataset=mnist --epochs=10 --hidden_size=128 --learning_rate=0.0007276720173445926 --loss=cross_entropy --model_save_path=models/sweep_model.npy --no_sweep_yaml=True --num_layers=2 --optimizer=nag --seed=21 --wandb_entity=rbhdsks-iitm --weight_decay=0.0004308525566858694 --weight_init=random
+2026-03-05 20:50:45 INFO Running runs: ['yrhzbbql']

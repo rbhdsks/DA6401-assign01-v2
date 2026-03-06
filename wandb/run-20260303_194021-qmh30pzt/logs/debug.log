@@ -1,0 +1,13 @@
+2026-03-03 19:40:21,794 INFO    MainThread:33778 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-03-03 19:40:21,794 INFO    MainThread:33778 [wandb_setup.py:_flush():81] Configure stats pid to 33778
+2026-03-03 19:40:21,794 INFO    MainThread:33778 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-03 19:40:21,795 INFO    MainThread:33778 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /Users/zsres/Desktop/DA6401-Assignment01/da6401_assignment_1/wandb/run-20260303_194021-qmh30pzt/logs/debug.log
+2026-03-03 19:40:21,795 INFO    MainThread:33778 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /Users/zsres/Desktop/DA6401-Assignment01/da6401_assignment_1/wandb/run-20260303_194021-qmh30pzt/logs/debug-internal.log
+2026-03-03 19:40:21,795 INFO    MainThread:33778 [wandb_init.py:init():844] calling init triggers
+2026-03-03 19:40:21,795 INFO    MainThread:33778 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'dataset': 'mnist', 'epochs': 20, 'batch_size': 128, 'loss': 'cross_entropy', 'optimizer': 'adam', 'learning_rate': 0.001, 'weight_decay': 0.0005, 'num_layers': 3, 'hidden_size': [128, 128, 64], 'activation': 'relu', 'weight_init': 'xavier', 'seed': 42, 'validation_split': 0.1, 'wandb_entity': 'DA6401-DL-ASSIGNMENT01', 'wandb_run_name': 'mnist_run_01', 'no_wandb': False, 'model_save_path': 'models/best_model.npy', 'config_save_path': 'models/best_config.json', '_wandb': {}}
+2026-03-03 19:40:21,795 INFO    MainThread:33778 [wandb_init.py:init():892] starting backend
+2026-03-03 19:40:23,902 INFO    MainThread:33778 [wandb_init.py:init():895] sending inform_init request
+2026-03-03 19:40:23,948 INFO    MainThread:33778 [wandb_init.py:init():903] backend started and connected
+2026-03-03 19:40:23,972 INFO    MainThread:33778 [wandb_init.py:init():973] updated telemetry
+2026-03-03 19:40:23,984 INFO    MainThread:33778 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout

@@ -1,0 +1,10 @@
+Epoch 001/10 | train_loss=0.0324 train_acc=0.8973 | val_loss=0.0203 val_acc=0.8935 val_f1=0.8915
+Epoch 002/10 | train_loss=0.0192 train_acc=0.9054 | val_loss=0.0185 val_acc=0.9013 val_f1=0.8995
+Epoch 003/10 | train_loss=0.0183 train_acc=0.9070 | val_loss=0.0184 val_acc=0.9023 val_f1=0.9007
+Epoch 004/10 | train_loss=0.0180 train_acc=0.9076 | val_loss=0.0182 val_acc=0.9027 val_f1=0.9008
+Epoch 005/10 | train_loss=0.0179 train_acc=0.9082 | val_loss=0.0181 val_acc=0.9003 val_f1=0.8987
+Epoch 006/10 | train_loss=0.0177 train_acc=0.9094 | val_loss=0.0179 val_acc=0.9010 val_f1=0.8994
+Epoch 007/10 | train_loss=0.0176 train_acc=0.9077 | val_loss=0.0178 val_acc=0.9033 val_f1=0.9017
+Epoch 008/10 | train_loss=0.0176 train_acc=0.9083 | val_loss=0.0177 val_acc=0.9037 val_f1=0.9021
+Epoch 009/10 | train_loss=0.0175 train_acc=0.9086 | val_loss=0.0178 val_acc=0.8998 val_f1=0.8984
+Epoch 010/10 | train_loss=0.0175 train_acc=0.9088 | val_loss=0.0176 val_acc=0.9038 val_f1=0.9022

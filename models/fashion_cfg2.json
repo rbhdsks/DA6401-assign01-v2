@@ -1,0 +1,42 @@
+{
+  "dataset": "fashion_mnist",
+  "epochs": 20,
+  "batch_size": 128,
+  "loss": "cross_entropy",
+  "optimizer": "nadam",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0005,
+  "num_layers": 3,
+  "hidden_size": [
+    128,
+    128,
+    64
+  ],
+  "activation": "relu",
+  "weight_init": "xavier",
+  "seed": 42,
+  "model_path": "models/fashion_cfg2.npy",
+  "metrics": {
+    "train": {
+      "loss": 0.20586907902723098,
+      "accuracy": 0.9237962962962963,
+      "precision": 0.9239957672898556,
+      "recall": 0.9237962962962962,
+      "f1": 0.9236231173652187
+    },
+    "val": {
+      "loss": 0.2780067042777239,
+      "accuracy": 0.8966666666666666,
+      "precision": 0.8976349298059667,
+      "recall": 0.8966666666666668,
+      "f1": 0.8967599898249066
+    },
+    "test": {
+      "loss": 0.32490169587011286,
+      "accuracy": 0.8853,
+      "precision": 0.885919960132789,
+      "recall": 0.8853,
+      "f1": 0.8851474268787015
+    }
+  }
+}

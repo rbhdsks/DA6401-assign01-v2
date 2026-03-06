@@ -1,0 +1,42 @@
+{
+  "dataset": "mnist",
+  "epochs": 20,
+  "batch_size": 128,
+  "loss": "cross_entropy",
+  "optimizer": "adam",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0005,
+  "num_layers": 3,
+  "hidden_size": [
+    128,
+    128,
+    64
+  ],
+  "activation": "relu",
+  "weight_init": "xavier",
+  "seed": 42,
+  "model_path": "models/best_model.npy",
+  "metrics": {
+    "train": {
+      "loss": 0.02273631303152855,
+      "accuracy": 0.9935,
+      "precision": 0.9934358121321747,
+      "recall": 0.993502076699016,
+      "f1": 0.9934513869817344
+    },
+    "val": {
+      "loss": 0.08483175195115053,
+      "accuracy": 0.9756666666666667,
+      "precision": 0.9756441994787096,
+      "recall": 0.9754738490872986,
+      "f1": 0.9754917408037491
+    },
+    "test": {
+      "loss": 0.06918494328590966,
+      "accuracy": 0.9788,
+      "precision": 0.9785940640276474,
+      "recall": 0.9787444610010223,
+      "f1": 0.9786403893365995
+    }
+  }
+}

@@ -1,0 +1,113 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            6c5bv58969f0oakqcxjr0r0fcvj1yiyt:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 7
+                    memoryGb: 8
+                    name: Apple M1
+                    pcpuCores: 4
+                    ramTotalBytes: "8589934592"
+                    swapTotalBytes: "11811160064"
+                args:
+                    - --activation=relu
+                    - --batch_size=64
+                    - --config_save_path=models/sweep_config.json
+                    - --dataset=mnist
+                    - --epochs=30
+                    - --hidden_size=96
+                    - --learning_rate=0.0003573721291949725
+                    - --loss=cross_entropy
+                    - --model_save_path=models/sweep_model.npy
+                    - --no_sweep_yaml=True
+                    - --num_layers=3
+                    - --optimizer=rmsprop
+                    - --seed=42
+                    - --wandb_entity=rbhdsks-iitm
+                    - --weight_decay=0.0009412378339600722
+                    - --weight_init=xavier
+                codePath: src/train.py
+                codePathLocal: src/train.py
+                cpu_count: 8
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "245107195904"
+                        used: "189041786880"
+                email: rbhdsks@gmail.com
+                executable: /Users/zsres/.pyenv/versions/3.10.11/bin/python
+                git:
+                    commit: ce382a8b96d6958e70425706a260255e302c59d9
+                    remote: https://github.com/rbhdsks/DA6401-assign01.git
+                host: Niteshs-MacBook-Air.local
+                memory:
+                    total: "8589934592"
+                os: macOS-26.3-arm64-arm-64bit
+                program: /Users/zsres/Desktop/DA6401-Assignment01/da6401_assignment_1/src/train.py
+                python: CPython 3.10.11
+                root: /Users/zsres/Desktop/DA6401-Assignment01/da6401_assignment_1
+                startedAt: "2026-03-03T16:18:38.621512Z"
+                writerId: 6c5bv58969f0oakqcxjr0r0fcvj1yiyt
+        m: []
+        python_version: 3.10.11
+        t:
+            "1":
+                - 5
+                - 53
+                - 105
+            "2":
+                - 5
+                - 53
+                - 105
+            "3":
+                - 2
+                - 14
+                - 16
+            "4": 3.10.11
+            "5": 0.25.0
+            "8":
+                - 2
+            "12": 0.25.0
+            "13": darwin-arm64
+activation:
+    value: relu
+batch_size:
+    value: 64
+config_save_path:
+    value: models/sweep_config.json
+dataset:
+    value: mnist
+epochs:
+    value: 30
+hidden_size:
+    value: 96
+learning_rate:
+    value: 0.0003573721291949725
+loss:
+    value: cross_entropy
+model_save_path:
+    value: models/sweep_model.npy
+no_sweep_yaml:
+    value: true
+no_wandb:
+    value: false
+num_layers:
+    value: 3
+optimizer:
+    value: rmsprop
+seed:
+    value: 42
+sweep_yaml_path:
+    value: sweep.yml
+validation_split:
+    value: 0.1
+wandb_entity:
+    value: rbhdsks-iitm
+wandb_run_name:
+    value: ""
+weight_decay:
+    value: 0.0009412378339600722
+weight_init:
+    value: xavier

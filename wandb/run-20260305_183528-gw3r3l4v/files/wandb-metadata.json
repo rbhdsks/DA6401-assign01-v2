@@ -1,0 +1,55 @@
+{
+  "os": "macOS-26.3-arm64-arm-64bit",
+  "python": "CPython 3.10.11",
+  "startedAt": "2026-03-05T13:05:28.439502Z",
+  "args": [
+    "--activation=sigmoid",
+    "--batch_size=64",
+    "--config_save_path=models/sweep_config.json",
+    "--dataset=mnist",
+    "--epochs=10",
+    "--hidden_size=64",
+    "--learning_rate=0.0015943756371698285",
+    "--loss=cross_entropy",
+    "--model_save_path=models/sweep_model.npy",
+    "--no_sweep_yaml=True",
+    "--num_layers=3",
+    "--optimizer=nadam",
+    "--seed=7",
+    "--wandb_entity=rbhdsks-iitm",
+    "--weight_decay=0.0007509680964616699",
+    "--weight_init=random"
+  ],
+  "program": "/Users/zsres/Desktop/DA6401-Assignment01/da6401_assignment_1/src/train.py",
+  "codePath": "src/train.py",
+  "codePathLocal": "src/train.py",
+  "git": {
+    "remote": "https://github.com/rbhdsks/DA6401-assign01.git",
+    "commit": "ce382a8b96d6958e70425706a260255e302c59d9"
+  },
+  "email": "rbhdsks@gmail.com",
+  "root": "/Users/zsres/Desktop/DA6401-Assignment01/da6401_assignment_1",
+  "host": "MacBookAir",
+  "executable": "/Users/zsres/.pyenv/versions/3.10.11/bin/python",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "245107195904",
+      "used": "191217213440"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "apple": {
+    "name": "Apple M1",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 7,
+    "memoryGb": 8,
+    "swapTotalBytes": "11811160064",
+    "ramTotalBytes": "8589934592"
+  },
+  "writerId": "ugxhect7wfetaxq6y497t94b7bowea1y"
+}

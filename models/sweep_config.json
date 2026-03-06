@@ -1,0 +1,42 @@
+{
+  "dataset": "mnist",
+  "epochs": 30,
+  "batch_size": 64,
+  "loss": "cross_entropy",
+  "optimizer": "nadam",
+  "learning_rate": 0.0008035504083106707,
+  "weight_decay": 0.0003954739025025887,
+  "num_layers": 3,
+  "hidden_size": [
+    64,
+    64,
+    64
+  ],
+  "activation": "sigmoid",
+  "weight_init": "random",
+  "seed": 42,
+  "model_path": "models/sweep_model.npy",
+  "metrics": {
+    "train": {
+      "loss": 0.09146277872858073,
+      "accuracy": 0.9784814814814815,
+      "precision": 0.9784581949819557,
+      "recall": 0.9783074925571136,
+      "f1": 0.9783644085393322
+    },
+    "val": {
+      "loss": 0.12855854574303524,
+      "accuracy": 0.9658333333333333,
+      "precision": 0.9657783310354994,
+      "recall": 0.9655411163975403,
+      "f1": 0.9656224381874597
+    },
+    "test": {
+      "loss": 0.11331647031057855,
+      "accuracy": 0.9693,
+      "precision": 0.9692975336615014,
+      "recall": 0.9688941363851482,
+      "f1": 0.9690356267978393
+    }
+  }
+}

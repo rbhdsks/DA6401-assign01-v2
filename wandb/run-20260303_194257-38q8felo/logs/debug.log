@@ -1,0 +1,24 @@
+2026-03-03 19:42:57,457 INFO    MainThread:34193 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-03-03 19:42:57,457 INFO    MainThread:34193 [wandb_setup.py:_flush():81] Configure stats pid to 34193
+2026-03-03 19:42:57,457 INFO    MainThread:34193 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-03 19:42:57,457 INFO    MainThread:34193 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /Users/zsres/Desktop/DA6401-Assignment01/da6401_assignment_1/wandb/run-20260303_194257-38q8felo/logs/debug.log
+2026-03-03 19:42:57,458 INFO    MainThread:34193 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /Users/zsres/Desktop/DA6401-Assignment01/da6401_assignment_1/wandb/run-20260303_194257-38q8felo/logs/debug-internal.log
+2026-03-03 19:42:57,458 INFO    MainThread:34193 [wandb_init.py:init():844] calling init triggers
+2026-03-03 19:42:57,458 INFO    MainThread:34193 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'dataset': 'mnist', 'epochs': 20, 'batch_size': 128, 'loss': 'cross_entropy', 'optimizer': 'adam', 'learning_rate': 0.001, 'weight_decay': 0.0005, 'num_layers': 3, 'hidden_size': [128, 128, 64], 'activation': 'relu', 'weight_init': 'xavier', 'seed': 42, 'validation_split': 0.1, 'wandb_entity': '', 'wandb_run_name': 'mnist_run_01', 'no_wandb': False, 'model_save_path': 'models/best_model.npy', 'config_save_path': 'models/best_config.json', '_wandb': {}}
+2026-03-03 19:42:57,458 INFO    MainThread:34193 [wandb_init.py:init():892] starting backend
+2026-03-03 19:42:57,910 INFO    MainThread:34193 [wandb_init.py:init():895] sending inform_init request
+2026-03-03 19:42:57,940 INFO    MainThread:34193 [wandb_init.py:init():903] backend started and connected
+2026-03-03 19:42:57,960 INFO    MainThread:34193 [wandb_init.py:init():973] updated telemetry
+2026-03-03 19:42:57,978 INFO    MainThread:34193 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-03 19:42:59,279 INFO    MainThread:34193 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-03 19:42:59,581 INFO    MainThread:34193 [wandb_run.py:_console_start():2524] atexit reg
+2026-03-03 19:42:59,581 INFO    MainThread:34193 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-03-03 19:42:59,581 INFO    MainThread:34193 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-03-03 19:42:59,581 INFO    MainThread:34193 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-03-03 19:42:59,583 INFO    MainThread:34193 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-03 19:44:04,968 INFO    MainThread:34193 [wandb_run.py:_finish():2291] finishing run rbhdsks-iitm/DA6401-DL-ASSIGNMENT01/38q8felo
+2026-03-03 19:44:04,971 INFO    MainThread:34193 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-03-03 19:44:04,973 INFO    MainThread:34193 [wandb_run.py:_restore():2472] restore
+2026-03-03 19:44:04,973 INFO    MainThread:34193 [wandb_run.py:_restore():2478] restore done
+2026-03-03 19:44:07,210 INFO    MainThread:34193 [wandb_run.py:_footer_sync_info():3868] logging synced files

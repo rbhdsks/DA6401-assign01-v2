@@ -1,0 +1,45 @@
+program: src/train.py
+project: DA6401-DL-ASSIGNMENT01
+entity: rbhdsks-iitm
+method: random
+run_cap: 100
+metric:
+  name: val/accuracy
+  goal: maximize
+parameters:
+  dataset:
+    value: mnist
+  epochs:
+    values: [10]
+  batch_size:
+    values: [64, 128, 256]
+  loss:
+    values: [cross_entropy, mse]
+  optimizer:
+    values: [sgd, momentum, nag, rmsprop, adam, nadam]
+  learning_rate:
+    distribution: log_uniform_values
+    min: 0.0001
+    max: 0.005
+  weight_decay:
+    distribution: log_uniform_values
+    min: 0.000001
+    max: 0.001
+  num_layers:
+    values: [2, 3, 4]
+  hidden_size:
+    values: [64, 96, 128]
+  activation:
+    values: [sigmoid, tanh, relu]
+  weight_init:
+    values: [random, xavier]
+  seed:
+    values: [7, 21, 42]
+  model_save_path:
+    value: models/sweep_model.npy
+  config_save_path:
+    value: models/sweep_config.json
+  no_sweep_yaml:
+    value: true
+  wandb_entity:
+    value: rbhdsks-iitm

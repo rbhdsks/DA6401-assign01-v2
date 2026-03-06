@@ -1,0 +1,25 @@
+2026-03-05 20:24:33,518 INFO    MainThread:52591 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-03-05 20:24:33,518 INFO    MainThread:52591 [wandb_setup.py:_flush():81] Configure stats pid to 52591
+2026-03-05 20:24:33,518 INFO    MainThread:52591 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-05 20:24:33,518 INFO    MainThread:52591 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /Users/zsres/Desktop/DA6401-Assignment01/da6401_assignment_1/wandb/run-20260305_202433-njrdqpew/logs/debug.log
+2026-03-05 20:24:33,518 INFO    MainThread:52591 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /Users/zsres/Desktop/DA6401-Assignment01/da6401_assignment_1/wandb/run-20260305_202433-njrdqpew/logs/debug-internal.log
+2026-03-05 20:24:33,518 INFO    MainThread:52591 [wandb_init.py:init():844] calling init triggers
+2026-03-05 20:24:33,518 INFO    MainThread:52591 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'sigmoid', 'batch_size': 64, 'config_save_path': 'models/sweep_config.json', 'dataset': 'mnist', 'epochs': 30, 'hidden_size': 64, 'learning_rate': 0.0008035504083106707, 'loss': 'cross_entropy', 'model_save_path': 'models/sweep_model.npy', 'no_sweep_yaml': True, 'num_layers': 3, 'optimizer': 'nadam', 'seed': 42, 'wandb_entity': 'rbhdsks-iitm', 'weight_decay': 0.0003954739025025887, 'weight_init': 'random'}
+config: {'dataset': 'mnist', 'epochs': 30, 'batch_size': 64, 'loss': 'cross_entropy', 'optimizer': 'nadam', 'learning_rate': 0.0008035504083106707, 'weight_decay': 0.0003954739025025887, 'num_layers': 3, 'hidden_size': [64, 64, 64], 'activation': 'sigmoid', 'weight_init': 'random', 'seed': 42, 'validation_split': 0.1, 'wandb_entity': 'rbhdsks-iitm', 'wandb_run_name': '', 'no_wandb': False, 'sweep_yaml_path': 'sweep.yml', 'no_sweep_yaml': True, 'model_save_path': 'models/sweep_model.npy', 'config_save_path': 'models/sweep_config.json', '_wandb': {}}
+2026-03-05 20:24:33,518 INFO    MainThread:52591 [wandb_init.py:init():892] starting backend
+2026-03-05 20:24:33,944 INFO    MainThread:52591 [wandb_init.py:init():895] sending inform_init request
+2026-03-05 20:24:33,968 INFO    MainThread:52591 [wandb_init.py:init():903] backend started and connected
+2026-03-05 20:24:33,968 INFO    MainThread:52591 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'sigmoid', 'batch_size': 64, 'config_save_path': 'models/sweep_config.json', 'dataset': 'mnist', 'epochs': 30, 'hidden_size': 64, 'learning_rate': 0.0008035504083106707, 'loss': 'cross_entropy', 'model_save_path': 'models/sweep_model.npy', 'no_sweep_yaml': True, 'num_layers': 3, 'optimizer': 'nadam', 'seed': 42, 'wandb_entity': 'rbhdsks-iitm', 'weight_decay': 0.0003954739025025887, 'weight_init': 'random'}
+2026-03-05 20:24:33,969 INFO    MainThread:52591 [wandb_init.py:init():973] updated telemetry
+2026-03-05 20:24:33,984 INFO    MainThread:52591 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-05 20:24:40,212 INFO    MainThread:52591 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-05 20:24:40,511 INFO    MainThread:52591 [wandb_run.py:_console_start():2524] atexit reg
+2026-03-05 20:24:40,511 INFO    MainThread:52591 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-03-05 20:24:40,511 INFO    MainThread:52591 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-03-05 20:24:40,511 INFO    MainThread:52591 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-03-05 20:24:40,513 INFO    MainThread:52591 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-05 20:50:19,778 INFO    MainThread:52591 [wandb_run.py:_finish():2291] finishing run rbhdsks-iitm/DA6401-DL-ASSIGNMENT01/njrdqpew
+2026-03-05 20:50:19,792 INFO    MainThread:52591 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-03-05 20:50:19,801 INFO    MainThread:52591 [wandb_run.py:_restore():2472] restore
+2026-03-05 20:50:19,802 INFO    MainThread:52591 [wandb_run.py:_restore():2478] restore done
+2026-03-05 20:50:32,386 INFO    MainThread:52591 [wandb_run.py:_footer_sync_info():3868] logging synced files

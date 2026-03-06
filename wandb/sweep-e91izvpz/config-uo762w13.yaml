@@ -1,0 +1,34 @@
+wandb_version: 1
+
+activation:
+  value: relu
+batch_size:
+  value: 256
+config_save_path:
+  value: models/sweep_config.json
+dataset:
+  value: mnist
+epochs:
+  value: 10
+hidden_size:
+  value: 96
+learning_rate:
+  value: 0.0030107469538771725
+loss:
+  value: cross_entropy
+model_save_path:
+  value: models/sweep_model.npy
+no_sweep_yaml:
+  value: true
+num_layers:
+  value: 4
+optimizer:
+  value: momentum
+seed:
+  value: 21
+wandb_entity:
+  value: rbhdsks-iitm
+weight_decay:
+  value: 4.1062500111145666e-05
+weight_init:
+  value: xavier
